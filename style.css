@@ -1,0 +1,193 @@
+body, html {
+    background:rgb(12, 0, 20);
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Orbitron', sans-serif;
+  }
+ 
+  .container {
+    display: flex;
+    justify-content: center;
+    margin: 3em auto;
+  }
+
+  #dagen {
+      display:block;
+      width:10%;
+      margin-left:-20%;
+  }
+  
+ 
+  button {
+    background: rgb(135, 148, 110);
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius:10px;
+    outline: none;
+  }
+  
+  button:hover {
+    color: rgb(68, 68, 68);
+    transition: color .5s;
+    cursor: pointer;
+  }
+  #tijd {
+    display:flex;
+    width:40%;
+    text-align: center;
+    font-size: 3em;
+    margin: 3em 0 .5em;
+    margin-left:20%;
+  }
+  
+  #datum {
+    display: list-item;
+    list-style: none;
+    width: 50%;
+    font-size: 2em;
+    margin-bottom: 1em;
+    margin-left:26%;
+  }
+
+  ul {
+    font-size: 1.5em;
+    color: rgb(209, 198, 198);
+  }
+  ul li{
+    margin: 1em;
+    display: inline-flex;
+  }
+  .glow {
+    color: rgb(185, 197, 133);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(61, 59, 59), 0 0 20px #fff, 0 0 30px #e50022, 
+      0 0 40px #e50022, 0 0 50px #e50022, 0 0 60px #e50022, 0 0 70px #e50022;
+    }
+  
+    to {
+      text-shadow: 0 0 20px rgb(61, 59, 59), 0 0 30px #e20000, 0 0 40px #e20000, 
+      0 0 50px #e20000, 0 0 60px #e20000, 0 0 70px #e20000, 0 0 80px #e20000;
+    }
+  }
+
+  @media only screen and (min-width: 768px){
+
+    .container {
+        display: flex;
+        justify-content: center;
+        margin: 3em auto;
+      }
+
+    #dagen {
+        width:50%;
+        margin-left:-5%;
+    }
+
+    ul {
+        font-size: 2em;
+      }
+
+      #tijd {
+        display:flex;
+        width:50%;
+        font-size: 4em;
+        margin-left:25%;
+      }
+
+      #datum {
+        width: 100%;
+        font-size: 3em;
+        margin-bottom: 1em;
+        margin-left:2%;
+      }
+
+      button {
+        width: 220px;
+        height: 70px;
+        font-size: 1.5em;
+      }
+  }
+
+  @media only screen and (min-width: 1024px){
+
+    #dagen {
+        width:70%;
+        margin-left:-5%;
+    }
+
+    ul {
+        font-size: 3em;
+      }
+
+      #tijd {
+        display:flex;
+        width:70%;
+        font-size: 6em;
+        text-align: left;
+        margin-left:18%;
+      }
+
+      #datum {
+        width: 100%;
+        font-size: 4em;
+        margin-left:1px;
+      }
+
+      button {
+        width: 240px;
+        height: 90px;
+        font-size: 2em;
+      }
+  }
+
+  @media only screen and (min-width: 1200px){
+
+    .container {
+      display: inline;
+      justify-content: center;
+      
+    }
+
+    #dagen {
+        display: inline-flex;
+        justify-content: center;
+        width:90%;
+       
+    }
+
+    ul {
+        font-size: 3em;
+      }
+
+      #tijd {
+        display: inline-flex;
+        width:65%;
+        font-size: 6.5em;
+        justify-content: center;
+        margin-left: 10px;
+      }
+
+      #datum {
+        width: 90%;
+        font-size: 4em;
+        margin-left:70px;
+      }
+
+      button {
+        width: 280px;
+        height: 120px;
+        font-size: 2.5em;
+        margin-left:4px;
+      }
+  }
